@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="teststyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <title>Hotforex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <script>
+		$(window).scroll(function(){
+    if ($(window).scrollTop() >= 100) {
+       $('.sticky-top').addClass('sticky-bar');
+		if($(window).width() > 990){	   
+		$(".hidden-on-scroll").hide();
+		}
+    }
+	
+    else {
+       $('.sticky-top').removeClass('sticky-bar');
+	   }
+	   
+	if ($(window).scrollTop() <= 50){
+	$(".hidden-on-scroll").show();
+	$(".sm-screen-button").show();
+	}
+	if ($(window).scrollTop() <= 200){
+	$(".top-right-bar").show();
+	}
+	if ($(window).scrollTop() <= 500){
+	$(".sm-screen-button").hide();
+	}
+	
+	
+	
+	
+});
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// A $( document ).ready() block.
+$(document).ready(function() {
+
+    $(".invisible-button").click(function(){
+	$(".hidden-on-scroll").toggle();
+	$(".top-right-bar").toggle();
+	
+	});
+	$(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').show();
+            } else {
+                $('#back-to-top').hide();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+           $("html, body").animate({ scrollTop: "300px" });
+		});
+		
+});
+	 </script>
+</head>
+<body>
+
+<div class="wrapper">
+<!--header-->
+	<div class="header sticky-top"><!--sticky-top sticky-bar-->
+	<nav>
+		<div class="topBar fullWidth">
+			<div class="container ">
+				<div class="col-md-3 col-sm-4 col-xs-12  hideThisTop" style="    padding-top: 10px; padding-left: 10px;">
+						<ul  class="pull-left list-unstyled " style="padding-left:0;">
+							<li>
+								<span class="topLeftContent  hidden-xs"> Member of HF Markets Group</span>
+							</li>
+							
+						</ul>
+					</div>
+				<div class="col-md-9 col-sm-6 col-xs-12 top-right-bar " style="font-size: 13px;">
+					<ul class="list-inline pull-right top-most-right-content">
+						<li class="list-inline-item pl-2">
+							<a href="#" class="white-color">
+								<i class=" fa fa-comments-o"></i>Live Chat</i>
+							</a>
+						
+						<li class="topbar-devider" >|</li>
+						
+						<li class="hidden750 hideThisTop" style="margin-left: -5px;">
+							<a  class="white-color hidden-xs" style="padding-left:0;  cursor: pointer;">Contact Us</a>
+						</li>
+						
+						<li>
+						<button type="button" class="btn btn-default login-button">Login</button>
+							<!--<a href="#" class=" top-buttons-styling" >Login</a>-->
+						</li>
+						
+						<li class="topbar-list">
+						<button type="button" class="btn btn-default open-liveAccount-button">Open Live Account</button>
+							<!--<a href="#" class="open-liveAccount-button top-buttons-styling"></a>-->
+						</li>
+						
+						<li>
+						<button type="button" class="btn btn-default demo-button hidden-xs ">Demo</button>
+							<!--<a href="#" class=" hidden750 hidden990  top-buttons-styling hidden-xs">Demo</a>-->
+						</li>
+						
+						<li class="hoverSelector hidden-xs">
+							<div class=" btn ">
+							<button class="dropdown-button  dropdown-toggle" type="button" data-toggle="dropdown"><img src="en.png"" class="lang-en"><span class="caret"></span>EN</button>
+									<ul class="dropdown-menu dropdown-menu-right flag-dropdown">
+										<ul class="col-md-6 list-unstyled">
+											<li><a href="#"><img src="en.png"> English</a></li>
+											<li><a href="#"><img src="dgrse_.png"> 简体</a></li>
+											<li><a href="#"><img src="dgj.png" > 繁体</a></li>
+											<li><a href="#"><img src="fjs.png"> ภาษาไทย</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Indonesia</a></li>
+											<li><a href="#"><img src="dgrse_.png">  বাঙ্গালী</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Português</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Ελληνικά</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Pусский</a></li>
+											<li><a href="#"><img src="dgrse_.png"> العربية</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Melayu</a></li>
+											<li><a href="#"><img src="dgrse_.png"> Filipino</a></li>
+											<li><a href="#"><img src="dgrse_.png"> فارسی</a></li>
+											<li><a href="#"><img src="dgrse_.png"> 日本語</a></li>
+										</ul>
+										<ul class="col-md-6 list-unstyled">
+											<li><a href="#"><img src="fjs.png"> Magyar</a></li>
+											<li><a href="#"><img src="fjs.png"> Czech</a></li>
+											<li><a href="#"><img src="fjs.png"> Română</a></li>
+											<li><a href="#"><img src="fjs.png"> Italiano</a></li>
+											<li><a href="#"><img src="fjs.png"> Polski</a></li>
+											<li><a href="#"><img src="fjs.png"> Slovak</a></li>
+											<li><a href="#"><img src="fjs.png"> Français</a></li>
+											<li><a href="#"><img src="fjs.png"> български</a></li>
+											<li><a href="#"><img src="fjs.png"> Español</a></li>
+											<li><a href="#"><img src="fjs.png"> Deutsch</a></li>
+											<li><a href="#"><img src="fjs.png"> Việt Nam</a></li>
+											<li><a href="#"><img src="fjs.png"> 한국의</a></li>
+											<li><a href="#"><img src="fjs.png"> Türkçe</a></li> 
+										</ul>
+									</ul>
+									
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="fullWidth topmenuBackground " >
+				<div class="container" style="padding-left:  0px; padding-top: 0px !important;">
+					
+						<div class="navbar-header">
+							<span class="sm-screen-button hidden-lg hidden-md" onclick="openNav()">&#9776;</span>
+							<a href="" class="navbar-brand"><img class="insideLogo img-responsive" src="logo.png"> </a>
+						</div>
+						
+						<div class="collapse navbar-collapse pull-right button-property block-button "  id="navbaaar" >
+							 <ul class="nav navbar-nav top-menu-navbar hidden-on-scroll">
+								<li><a href="#" class="white-color"><span class="fa fa-home home"></span></a></li>
+									<li class="dropdown">
+										<a data-toggle="dropdown" href="#"  class="white-color dropdown-toggle">ABOUT</a>
+										<ul class="dropdown-menu">
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">About HotForex</span></a></li>
+												<li><a href="#" class="white-color">About HotForex</a></li>
+												<li><a href="#" class="white-color">Advantages of HotForex</a></li>
+												<li><a href="#" class="white-color">Social Responsibility</a></li>
+												<li><a href="#" class="white-color">Company News</a></li>
+												<li><a href="#" class="white-color">HotForex Gallery<span class="newword">NEW</span></a></li>
+											</ul>
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">Regulation</span></a></li>
+												<li><a href="#" class="white-color">Regulation and License</a></li>
+												<li><a href="#" class="white-color">Security of Funds</a></li>
+												<li><a href="#" class="white-color">Awards</a></li>
+												<li><a href="#" class="white-color">Legal Dosumentation</a></li>
+											</ul>
+										</ul>
+									</li>
+									<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">PRODUCTS</a>
+										<ul class="dropdown-menu menu-2">
+											<ul class="col-md-12 list-unstyled">
+												<li><a href="#"><span class="title">Trading Instruments</span></a></li>
+												<li><a href="#" class="white-color">HotForex Spreads Comparison</a></li>
+												<li><a href="#" class="white-color">Forex</a></li>
+												<li><a href="#" class="white-color">Metal Energies</a></li>
+												<li><a href="#" class="white-color">Indices</a></li>
+												<li><a href="#" class="white-color">Shares</a></li>
+												<li><a href="#" class="white-color">Commodities</a></li>
+												<li><a href="#" class="white-color">Cryptocurrencies <span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">Bonds  <span class="color-red">New!</span></a></li>
+												
+														
+
+											</ul>
+										</ul>
+									</li>
+								
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">ACCOUNTS</a>
+									<ul class="dropdown-menu    ">
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">Account Types</span></a></li>
+												<li><a href="#" class="white-color">Account Comparison</a></li>
+												<li><a href="#" class="white-color">Micro Account</a></li>
+												<li><a href="#" class="white-color">Premium Account</a></li>
+												<li><a href="#" class="white-color">VIP Account</a></li>
+												<li><a href="#" class="white-color">FIX Account</a></li>
+											</ul>
+											
+
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">More Accounts</span></a></li>
+												<li><a href="#" class="white-color">Auto Account</a></li>
+												<li><a href="#" class="white-color">PAMM Account</a></li>
+												<li><a href="#" class="white-color">Zerp Spread Account</a></li>
+												<li><a href="#" class="white-color">Islamic Account</a></li>
+											</ul>
+										</ul>
+								</li>
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">PLATFORMS</a>
+									<ul class="dropdown-menu  menu-2   ">
+											<ul class="col-md-12 list-unstyled">
+												<li><a href="#"><span class="title">Trading Platforms</span></a></li>
+												<li><a href="#" class="white-color">Download the HotForex MT4</a></li>
+												<li><a href="#" class="white-color">HotForex MT4 WebTerminal <span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">MT4 MultiTerminal</a></li>
+												<li><a href="#" class="white-color">HotForex Android</a></li>
+												<li><a href="#" class="white-color">HotForex iPad Trader</a></li>
+												<li><a href="#" class="white-color">Smartphone Mobile Trading</a></li>
+												<li><a href="#" class="white-color">HotForex FIX/API</a></li>
+											</ul>
+											
+									</ul>
+								</li>
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">TOOLS</a>
+									<ul class="dropdown-menu    ">
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">Trading Tools</span></a></li>
+												<li><a href="#" class="white-color">Premium Trader Tools<span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">Autochartist Tool <span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">Trading Calculators</a></li>
+												<li><a href="#" class="white-color">HotForex VPS Hosting</a></li>
+												<li><a href="#" class="white-color">myHotForex Client Area</a></li>
+												<li><a href="#" class="white-color">HotForex App  <span class="color-red">Upgraded!</span></a></li>
+											</ul>
+											
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">Analysis Tools</span></a></li>
+												<li><a href="#" class="white-color">HotForex Exclusive Analysis</a></li>
+												<li><a href="#" class="white-color">Economic Calendar</a></li>
+												<li><a href="#" class="white-color">Traders' Board</a></li>
+												<li><a href="#" class="white-color">Auto Trading - MQL5</a></li>
+												<li><a href="#" class="white-color">Forex News FXStreet  </a><img src="fxstreet.png"></img></li>
+												<li><a href="#" class="white-color">One Click Trading</a></li>
+											</ul>
+										</ul>
+								</li>
+				
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">EDUCATION</a>
+									<ul class="dropdown-menu menu-2   ">
+											<ul class="col-md-12 list-unstyled">
+												<li><a href="#"><span class="title">Education</span></a></li>
+												<li><a href="#" class="white-color">Forex Education / e-Course</a></li>
+												<li><a href="#" class="white-color">HotForex Video Tutorials</a></li>
+												<li><a href="#" class="white-color">Forex FAQ's</a></li>
+												<li><a href="#" class="white-color">Webinars <span class="color-red">Live</span></a></li>
+											</ul>
+										
+										</ul>
+								</li>
+
+				
+
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">PROMOTIONS</a>
+									<ul class="dropdown-menu menu-2   ">
+											<ul class="col-md-12 list-unstyled">
+												<li><a href="#"><span class="title">Promotions</span></a></li>
+												<li><a href="#" class="white-color">Loyalty Program  <span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">HotForex MasterCard <span class="color-red">New!</span></a></li>
+												<li><a href="#" class="white-color">Bonus Offerings</a></li>
+												<li><a href="#" class="white-color">Contests & Rewards</a></li>
+												<li><a href="#" class="white-color">Free Funding</a></li>
+												<li><a href="#" class="white-color">HotForex Merchandise</a></li>
+												<li><a href="#" class="white-color">Deposit</a></li>
+											</ul>
+											
+										</ul>
+								</li>
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">PARTNERS</a>
+									<ul class="dropdown-menu menu-2    ">
+											<ul class="col-md-12 list-unstyled">
+												<li><a href="#"><span class="title">Become an Affiliate</span></a></li>
+												<li><a href="#" class="white-color">Affiliates</a></li>
+												<li><a href="#" class="white-color">White Label</a></li>
+												<li><a href="#" class="white-color">Introducing Brokers</a></li>
+												<li><a href="#" class="white-color">HotForex Prime</a></li>
+											</ul>
+											
+				
+											
+										</ul>
+								</li>
+								<li class="dropdown"><a data-toggle="dropdown" href="#" href="#" class="white-color dropdown-toggle">INVESTMENTS</a>
+									<ul class="dropdown-menu ">
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">Pamm</span></a></li>
+												<li><a href="#" class="white-color">PAMM Accounts</a></li>
+												<li><a href="#" class="white-color">Become an Investor</a></li>
+												<li><a href="#" class="white-color">Become a Manager</a></li>
+												<li><a href="#" class="white-color">PAMM Ranking</a></li>
+											</ul>
+							
+
+
+											<ul class="col-md-6 list-unstyled">
+												<li><a href="#"><span class="title">HFcopy</span></a></li>
+												<li><a href="#" class="white-color">How it works </a></li>
+												<li><a href="#" class="white-color">Become a Follower </a></li>
+												<li><a href="#" class="white-color">Become a Strategy Provider</a></li>
+												<li><a href="#" class="white-color">Strategy Providers listing</a></li>
+											</ul>
+										</ul>
+								</li>
+								
+							 </ul>
+							 
+						</div>
+						<span class="invisible-button"><i class="fa fa-bars " aria-hidden="true" style="margin-left: -81px; margin-top: 17px; color: white;"></i></span>
+					
+				</div>
+		</div>
+		</nav>
+	</div>
+<!--header-->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	 <a href="#"><h2>Menu</h2></a>
+   <a href="#"><i class="icon-line icon-home icon-red"></i> HOME</a>
+  <a href="#"><i class="icon-line icon-lock icon-red"></i> LOGIN</a>
+  <a href="#"><i class="icon-line icon-book-open icon-red"></i> ABOUT</a>
+  <a href="#"><i class="icon-line icon-briefcase icon-red"></i> PRODUCTS</a>
+  <a href="#"><i class="icon-line icon-user icon-red"></i> ACCOUNTS</a>
+  <a href="#"><i class="icon-line icon-layers icon-red"></i> PLATFORMS</a>
+  <a href="#"><i class="icon-line icon-calculator icon-red"></i> TOOLS</a>
+  <a href="#"><i class="icon-line icon-graduation  icon-red"></i> EDUCATION</a>
+  <a href="#"><i class="icon-line icon-globe icon-red"></i> PROMOTIONS</a>
+  <a href="#"><i class="icon-line icon-user-follow icon-red"></i> PARTNERS</a>
+  <a href="#"><i class="icon-line icon-docs icon-red"></i> INVESTMENTS</a>
+  <a href="#"><i class="icon-line icon-speech icon-red"></i> CONTACT US</a>
+</div>
+			<!--start of body slider-->
+	<div class="fullWidth">
+		<div class="slide-container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators indicatorr">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		  <li data-target="#myCarousel" data-slide-to="3"></li>
+		  <li data-target="#myCarousel" data-slide-to="4"></li>
+		  <li data-target="#myCarousel" data-slide-to="5"></li>
+		  <li data-target="#myCarousel" data-slide-to="6"></li>
+		  <li data-target="#myCarousel" data-slide-to="7"></li>
+		  <li data-target="#myCarousel" data-slide-to="8"></li>
+		  <li data-target="#myCarousel" data-slide-to="9"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+		  <div class="item active">
+			<div class="slider-image-1"></div>
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+
+		    <div class="item slider-image-2">
+			
+				<div class="carousel-caption">
+					<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+				</div>
+			</div>
+		  
+		
+		  <div class="item slider-image-3">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		 </div>
+		  
+		  
+		  <div class="item slider-image-4">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+		  
+		  <div class="item slider-image-5">
+			
+		  </div>
+		  
+		  <div class="item slider-image-6">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+		  
+		  
+		  <div class="item slider-image-7">
+			
+			</div>
+		  
+		  <div class="item slider-image-8">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+		  
+		  <div class="item slider-image-9">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+		  
+		  <div class="item slider-image-10">
+			
+			<div class="carousel-caption">
+				<a href="#" target="_blank"><button type="button" class="btn btn-danger slider-button-styling">Learn More</button></a>
+			</div>
+		  </div>
+		  
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="padding-top: 140px;">
+		  <span class="fa fa-chevron-left"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next" style="padding-top: 140px;">
+		  <span class="fa fa-chevron-right"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	</div>
+		</div>
+		<div class="container mobile-view-sm hidden-lg hidden-md hidden-sm">
+		  <button type="button" class="btn btn-primary btn-lg btn-block top-green"><i class="fa fa-external-link"></i>Open Live Account</button>
+		  <button type="button" class="btn btn-default btn-lg btn-block bottom-gray"><i class="fa fa-external-link"></i>Open Live Account</button>
+		
+	</div>
+		
+</div>
+<!--End of slider-->
+
+<!--Mobile view button-->
+	
+<!--End-->
+
+<!--Start of purchase-->
+<div class="fullWidth">
+		<div class="bg-color-purchase">
+			<div class="container">
+				<div class="row">
+					<ul class="col-md-2 col-sm-6 col-xs-6 full-width-410 security-of-funds list-inline icons-txt purchase-border">
+						<table class="adj-1">
+							<tr>
+								<td><img src="lock.png"  class="tools"></td>
+								<td><span class="side-text ">SECURITY OF FUNDS</span></td>
+							</tr>
+						</table>
+						
+					</ul>
+					<ul  class="col-md-2 col-sm-6 col-xs-6 full-width-410 account-levrrage  list-inline icons-txt purchase-border">
+						<table class="adj-2">
+							<tr>
+								<td><img src="time.png"  class="tools"></td>
+								<td><span class="side-text ">ACCOUNT LEVRRAGE</span></td>
+							</tr>
+						</table>
+						
+						
+					</ul >
+					<ul  class="col-md-2 col-sm-6 col-xs-6  trading-platforms  list-inline icons-txt purchase-border">
+						<table class="adj-3">
+							<tr>
+								<td><img src="computer.png" class="tools"></td>
+								<td><span class="side-text">8 TRADING PLATFORMS</span></td>
+							</tr>
+						</table>
+						
+					</ul>
+					<ul  class="col-md-2 col-sm-6 col-xs-6 credit-bonus  list-inline icons-txt purchase-border ">
+						<table class="adj-4">
+							<tr>
+								<td><img src="gift.png"   class="tools"></td>
+								<td><span class="side-text">100% CREDIT BONUS</span></td>
+							</tr>
+						</table>
+						
+					</ul>
+					<ul  class="col-md-2 col-sm-6 col-xs-6 customer-support list-inline icons-txt purchase-border">
+						<table class="adj-5">
+							<tr>
+								<td><img src="headphones.png"  class="tools"></td>
+								<td><span class="side-text">24/5 CUSTOMER SUPPORT</span></td>
+							</tr>
+						</table>
+						
+					</ul>
+					<ul  class="col-md-2 col-sm-6 col-xs-6  list-inline icons-txt ">
+						<table class="adj-6">
+							<tr>
+								<td><img src="$.png"  class="tools"></td>
+								<td><span class="side-text">FEES ON DEPOSITS</span></td>
+							</tr>
+						</table>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+</div>
+<!--End of purchase-->
+
+
+
+
+
+<!--div for Gap-->
+<div class="fullWidth">
+	<div class="container margin-bottom-20 margin-10">
+		<div class="row">
+			<div class="col-md-12">
+			</div>
+		</div>
+	</div>
+</div>
+<!--div for Gap-->
+
+
+
+
+<!--Start of about info-->
+<div class="fullWidth">
+	<div class="container">
+		<div class="row intro-and-table">
+			<div class="col-md-4 col-sm-6 margin-top-10">
+				<div class="fullWidth border-home">
+					<a href="#" target="_blank">
+						<img src="b1.jpg" class="img-responsive">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 margin-top-10" style="margin-top: 10px;">
+				<div class="fullWidth border-home">
+					<h1 class="memberhf " style="padding-top: 10px; padding-bottom: 10px;">Licenses & Security of funds</h1>
+						<ul class="list-unstyled margin-bottom-20 license-and-security">
+							<li>
+								<a href="#"><b>Member of HF Markets Group</b></a>
+							</li>
+							<li>
+								<a href="#"><b class="color-red">Incorporated in SVG</b></a>
+							</li>
+							<li class="color-gray">Registration number 22747 IBC 2015</li>
+							<li class="color-gray">Company number: 22747</li>
+							<li>
+								<a href="#">Multi<b class="color-red">Award-Winning</b> Broker
+								</a>
+							</li>
+							<li class="color-gray">Best Broker in Asia Award</li>
+							<li>
+								Audited by<b class="color-red">Deloitte</b>
+							</li>
+							<br>
+							<li style="padding-top: -4px;">
+								<a href="#"><b>Security of Funds</b></a>
+							</li>
+							<li>
+								<a href="#">Accounts with<b class="color-red">Major Banks</b></a>
+							</li>
+							<li>
+								<a href="#">Segregation of Funds</a>
+							</li>
+							<li>
+								<a href="#">Negative Balance Protection</a>
+							</li>	
+						</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 margin-top-10">
+				<div class="fullWidth border-home current-rates-and-spreads-view" id="home-rates">
+					<h1 class="memberhf current-rates-and-spreads" >Current Rates & Spreads</h1>
+						
+								  
+								  <ul class="nav nav-tabs">
+									<li class="active border">
+										<a data-toggle="tab" href="#home" style="font-size:  11px;border:  none; ">FOREX</a>
+									</li>
+									<li class="border">
+										<a data-toggle="tab" href="#menu1" style="font-size:  11px; border:  none;">COMMODITIES</a>
+									</li>
+									<li class="border">
+										<a data-toggle="tab" href="#menu2" style="font-size:  11px;border:  none;">STOCKS	</a>
+									</li>
+									<li class="border">
+										<a data-toggle="tab" href="#menu3" style="font-size:  11px; border:  none;">INDICES</a>
+									</li>
+								  </ul>
+								  
+
+								  <div class="tab-content">
+										<ul class="list-inline quote-header" >
+											<li>Instrument</li>
+											<li>Bid/Ask</li>
+											<li>Spread</li>
+										</ul>
+										<div id="home" class="tab-pane fade in active">
+										  <ul class="list-unstyled " style="PADDING-LEFT: 32PX;">
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+											</ul>
+									  
+									</div>
+									<div id="menu1" class="tab-pane fade">
+										<ul class="list-unstyled " style="PADDING-LEFT: 32PX;">
+																	<li>
+																		<span><span><img src="oil.png"></span>
+																		</span><b class="table-line-hight">Oil</b> 
+																		<span class="color-red table-text-spacing-commodities"style="padding-left: 43px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="gold.png"></span>
+																		</span><b class="table-line-hight">Gold</b> 
+																		<span class="color-red table-text-spacing-commodities"style="padding-left: 28px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="silver.png"></span>
+																		</span><b class="table-line-hight">Silver</b> 
+																		<span class="color-green table-text-spacing-commodities"style="padding-left: 25px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="cotton.png"></span>
+																		</span><b class="table-line-hight">Cotton</b> 
+																		<span class="color-red table-text-spacing-commodities"style="padding-left: 14px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="sugar.png"></span>
+																		</span><b class="table-line-hight">Sugar</b> 
+																		<span class="color-green table-text-spacing-commodities"style="padding-left: 20px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="coffee.png"></span>
+																		</span><b class="table-line-hight">Coffee</b> 
+																		<span class="color-red table-text-spacing-commodities"style="padding-left: 14px;">1.24057 / 1.24059</span>
+																		<span class="deci-values-commodities">0.2</span>
+																	</li>
+																	<!--
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		</span><b class="table-line-hight">Copper</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>-->
+											</ul>
+									
+									</div>
+									<div id="menu2" class="tab-pane fade">
+										<ul class="list-unstyled " style="PADDING-LEFT: 32PX;">
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+											</ul>
+									  
+									</div>
+									<div id="menu3" class="tab-pane fade">
+										<ul class="list-unstyled " style="PADDING-LEFT: 32PX;">
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-green table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+																	<li>
+																		<span><span><img src="dgj.png"></span>
+																		<span><img src="dgrse_.png"></span></span><b class="table-line-hight">CHIOM</b> 
+																		<span class="color-red table-text-spacing">1.24057 / 1.24059</span>
+																		<span class="deci-values">0.2</span>
+																	</li>
+											</ul>
+									
+									</div>
+									<span class="tab-text">Zero Spread Quotes are delayed - Commissions apply</span>	
+								  </div>
+								
+
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!--End of about info-->
+
+
+
+<!--Start-->
+<div class="fullWidth dark-bg">
+	<div class="container">
+		<div class="row bd-row">
+			<div class="col-md-3 col-sm-6 col-xs-12 full-width-410 insideBoxHm">
+				<img src="bd1.jpg"class="img-responsive">
+					<h4 class="color-gray">Live Trading Analysis</h4>
+				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Daily Market Analysis
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Weekly Live Webinars
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Live Q&A Sessions
+					</li>
+				</ul>
+				<a class="read-more" href="" target="_blank">Read More</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 full-width-410 insideBoxHm">
+				<img src="bd2.png"class="img-responsive">
+					<h4 class="color-gray">ZERO Spread Account</h4>
+				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Raw spreads with 0 markups
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Low Commissions
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Low Cost Trading
+					</li>
+				</ul>
+				<a class="read-more" href="" target="_blank">Read More</a>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 col-xs-12 full-width-410 insideBoxHm">
+				<img src="bd3.jpg"class="img-responsive">
+				<h4 class="color-gray">Bonus Offerings</h4>
+				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> 100% Supercharged Bonus
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> 100% Credit Bonus
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Boost Your Trading
+					</li>
+				</ul>
+				<a class="read-more" href="" target="_blank">Read More</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 full-width-410 insideBoxHm">
+				<img src="bd4.jpg"class="img-responsive">
+				<h4 class="color-gray">Become an Affiliate</h4>
+				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Earnings up to $15 per lot
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Auto or Manual Rebate Systems
+					</li>
+					<li>
+						<i class="fa fa-check tick-class" aria-hidden="true"></i> Free Marketing Tools
+					</li>
+				</ul>
+				<a class="read-more" href="" target="_blank">Read More</a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!--END-->
+
+
+
+<!--start-->
+<div class="fullWidth">
+	<div class="container lower-icons">
+		<div class="row adjusting-fig-text">
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-1">
+				<figure>
+					<img src="setting.png" class="ad-pics">
+					<figcaption class="ad-text">17 Trading Tools</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-2">
+				<figure>
+					<img src="boaedr.png"class="ad1-pics">
+					<figcaption class="ad1-text">8 Account Types</figcaption>
+				</figure>	
+			</div>
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-3">
+				<figure>
+					<img src="stick.png" class="ad2-pics">
+					<figcaption class="ad2-text">150+ Trading Products</figcaption>
+				</figure>	
+			</div>
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-4">
+				<figure>
+					<img src="mt4.png"  class="ad3-pics">
+					<figcaption  class="ad3-text">8 Trading Platforms</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-5">
+				<figure>
+					<img src="cap.png"  class="ad4-pics">
+					<figcaption  class="ad4-text">25 Video Tutorials</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-2 col-sm-6  col-xs-6 adjst-6">
+				<figure>
+					<img src="voilet.png"  class="ad5-pics">
+					<figcaption  class="ad4-text">10 Funding Methods</figcaption>
+				</figure>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!--END-->
+	
+
+	
+<!--start-->
+<div class="fullWidth">
+	<div class="container bottomQuotes">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<h4 class="bq-class">About HF Markets Group</h4>
+				<ul class="list-unstyled q-border q-border-1">
+					<li>
+						<a href="#"><b class="color-red">500,000 </b>Live Accounts Opened</a>
+					</li>
+					<li>
+						<a href="#">HF Brand Established since <b>2010</b></a>
+					</li>
+					<li>
+						<a href="#"><b class="color-red">150+</b>Employees Globally</a>
+					</li>
+					<li>
+						<a href="#">Winner of<b class="color-red"> 20</b> Industry Awards</a>
+					</li>
+					<li>
+						<a href="#"><b class="color-red">27</b> Support Languages</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h4 class="bq-class">PAMM System</h4>
+				<ul class="list-unstyled q-border q-border-2">
+					<li>
+						<a href="#"><b class="">Safe Trading</b> environment</a>
+					</li>
+					<li>
+						<a href="#">Unlimited<b> Underlying Accounts</b></a>
+					</li>
+					<li>
+						<a href="#"><b> Expert Advisor</b> Trading Allowed </a>
+					</li>
+					<li>
+						<a href="#"><b>Full Manager Statistics</b> Provided</a>
+					</li>
+					<li>
+						<a href="#">Ability for<b> Partial Withdrawals</b></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h4 class="bq-class">Smart Trading</h4>
+				<ul class="list-unstyled q-border q-border-3">
+					<li>
+						<a href="#"><b class="">Autochartist Tool</b></a>
+					</li>
+					<li>
+						<a href="#">HotForex <b>VPS </b>Hosting</a>
+					</li>
+					<li>
+						<a href="#">HotForex <b>Trader's Board</b></a>
+					</li>
+					<li>
+						<a href="#"><b>One Click</b> Trading</a>
+					</li>
+					<li>
+						<a href="#"><b>Award-winning</b> MT4 Platform</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h4 class="bq-class">Featured Releases</h4>
+				<ul class="list-unstyled q-border q-border-4">
+					<li>
+						<a href="#"><b class="">Premium Trader Tools</b><span class="color-red"> New!</span></a>
+					</li>
+					<li>
+						<a href="#"><b>More Cryptocurrencies Added</b><span class="color-red"> New!</span></a>
+					</li>
+					<li>
+						<a href="#"><b>Our Photo Gallery</b></a>
+					</li>
+					<li>
+						<a href="#"><b>Market Leading Insurance</b></a>
+					</li>
+					<li>
+						<a href="#"><b>Updated mobile app</b></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--END-->
+
+
+
+<!--Start-->
+<div class="fullWidth bottom-pics">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 upper-pic">
+				<img src="securityforclients-banner-sv.jpg" class="img-responsive">
+			</div>
+			<div class="col-md-6 col-sm-6 lower-pic">
+				<img src="hotforex_mastercard-sv.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
+<!--End-->
+
+
+
+<!--Start-->
+<div class="fullWidth  background-light card-images  hidden-sm hidden-xs">
+	<div class="container" style="margin-top: -20px;">
+		<br><br>
+			<div >
+						<div class="col-md-1"><img src="images/visa.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/visa-electron.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/mastercard.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/maestro.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/skrill.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/cpu.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/neteller.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/wire-transfer.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/web-money.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/fasapay.png" width="70" height="49" alt=""/></div>
+						<div class="col-md-1"><img src="images/bitcoin-icon.png" width="70" height="49" alt=""/></div>
+			</div>
+	</div>
+</div>
+
+<!--END-->
+
+
+
+<!--Start footer-->
+<div class="footer fullWidth">
+
+	<div class="top-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h4 class="color-gray alignMiddle750 winner-award">
+						<i class="icon icon-line icon-trophy color-red"></i> <a href="#" class="color-gray"> Winner of 20 Industry Awards</a>
+						</h4>				
+				</div>
+				<div class="col-md-6 col-sm-6 footer-bar-right">
+						<ul class="list-inline dark-social pull-right space-bottom-0 ar-left ">
+
+								<li>
+									<a class="tooltips" href="#" target="_blank" data-original-title="" title="">
+									<i class="fa fa-facebook color-gray"></i>
+									</a>
+								</li>
+								<li>
+									<a class="tooltips" href="#" target="_blank" data-original-title="" title="">
+									<i class="fa fa-twitter color-gray"></i>
+									</a>
+								</li>
+
+								<li>
+								<a class="tooltips" href="#" target="_blank" data-original-title="" title="">
+								<i class="fa fa-instagram color-gray"></i>
+								</a>
+								</li>
+
+								<li>
+									<a class="tooltips" href="#" target="_blank" data-original-title="" title="">
+									<i class="fa fa-youtube color-gray"></i>
+									</a>
+								</li>
+
+								<li>
+									<a class="tooltips" href="#" target="_blank" data-original-title="" title="">
+									<i class="fa fa-linkedin color-gray"></i>
+									</a>
+								</li>
+								<li>
+									<a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Analysis" href="#" target="_blank">
+									<i class="fa fa-bar-chart color-gray"></i>
+									</a>
+								</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="bottom-footer">
+			<div class="container">
+				<div class="row last-list">
+					<div class="col-md-3 contact-detail-list">
+						
+						<ul class="list-unstyled on-size-change ">
+						<h5>CONTACT US</h5>
+							<li>
+								<i class="fa fa-envelope-o color-red" aria-hidden="true"></i><span><a href="#">support@hotforex.com</a></span>
+							</li>
+							<li>
+								<i class="fa fa-phone color-red" aria-hidden="true"></i><span><a href="#">+44-2033185978</a></span>
+							</li>
+							<li>
+								<i class="fa fa-comments-o color-red" aria-hidden="true"></i><span><a href="#">Live Chat</a></span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-9 bottom-right-list ">
+						<ul class="list-inline list-unstyled">
+							<li>
+								
+								<ul class="list-unstyled">
+								<h5>ABOUT</h5>	
+								<li><a href="#">About HotForex</a></li>
+								<li><a href="#">Why HotForex</a></li>
+								<li><a href="#">Regulation and License</a></li>
+								<li><a href="#">Security of Funds</a></li>
+								<li><a href="#">Awards</a></li>
+								
+								
+								</ul>
+								
+							</li>
+							<li>
+								<ul class="list-unstyled">
+								<h5>PRODUCTS</h5>
+									
+								<li><a href="#">Forex</a></li>
+								<li><a href="#">Metals and Oil</a></li>
+								<li><a href="#">Indices</a></li>
+								<li><a href="#">Shares</a></li>
+								<li><a href="#">Commodities CDFs</a></li>
+								
+								</ul>
+							</li>
+							<li>
+								<ul class="list-unstyled">
+								<h5>TRADING</h5>
+									
+								<li><a href="#">Trading Tools</a></li>
+								<li><a href="#">Forex Education</a></li>
+								<li><a href="#">Platforms</a></li>
+								<li><a href="#">Account Types</a></li>
+								<li><a href="#">Exclusive Analysis</a></li>
+								
+								</ul>
+							</li>
+							<li>
+								<ul class="list-unstyled">
+								<h5>PROMOTIONS</h5>
+									
+								<li><a href="#">Loyalty Programs</a></li>
+								<li><a href="#">Bonus Offerings</a></li>
+								<li><a href="#">Contests & Rewards</a></li>
+								<li><a href="#">Free Funding</a></li>
+								<li><a href="#">Deposit</a></li>
+								
+								</ul>
+							</li>
+							<li>
+								
+								<ul class="list-unstyled">
+								<h5>PARTNERS</h5>
+								
+								<li><a href="#">Affiliates</a></li>
+								<li><a href="#">HotForex Prime</a></li>
+								<li><a href="#">White Label</a></li>
+								<li><a href="#">Introducing Brokers</a></li>
+								<li><a href="#">www.hfaffiliates.com</a></li>
+								
+								</ul>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="end">
+					<p>
+						<b>Legal:</b> HF Markets (SV) Ltd is incorporated in St. Vincent & the Grenadines as an International Broker Company with the registration number 22747 IBC 2015. The objects of the Company are all subject matters not forbidden by International Business Companies (Amendment and Consolidation) Act, Chapter 149 of the Revised Laws of Saint Vincent and Grenadines, 2009, in particular but not exclusively all commercial, financial, lending, borrowing, trading, service activities and the participation in other enterprises as well as to provide brokerage, training and managed account services in currencies, commodities, indexes, CFDs and leveraged financial instruments.<br> <br>The website www.hotforex.com/sv is operated by HF Markets (SV) Ltd<br><br>
+						<b>Risk Warning:</b> Trading leveraged products such as Forex and CFDs may not be suitable for all investors as they carry a high degree of risk to your capital. Please ensure that you fully understand the risks involved, taking into account your investments objectives and level of experience, before trading, and if necessary seek independent advice. Please read the full <a href="#">Risk Disclosure</a>. HotForex does not accept clients from the U.S., Canada, Belgium, Sudan, Syria and North Korea.
+					</p>
+					<ul class="unstyled list-inline">
+						<li class="copy-rights-text"> Copy right &copy; 2018 - All Rights Reserved</li>
+						<li class="norton-image"><img src="norton.png"></li>
+					</ul>	
+					
+				</div>
+			</div>
+		</div>
+	
+	
+			
+		
+		
+</div>
+
+<!--END footer-->
+
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+		<span class="icon-arrow-up"></span>
+	</a>
+
+
+</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</body>
+</html>
